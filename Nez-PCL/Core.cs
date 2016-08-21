@@ -41,6 +41,8 @@ namespace Nez
 		/// </summary>
 		public static GraphicsDevice graphicsDevice;
 
+		public static GraphicsDeviceManager graphicsDeviceManager;
+
 		/// <summary>
 		/// global content manager for loading any assets that should stick around between scenes
 		/// </summary>
@@ -119,6 +121,8 @@ namespace Nez
 			graphicsManager.SynchronizeWithVerticalRetrace = true;
 			graphicsManager.DeviceReset += onGraphicsDeviceReset;
 			graphicsManager.PreferredDepthStencilFormat = DepthFormat.Depth24Stencil8;
+
+			graphicsDeviceManager = graphicsManager;
 
 			Screen.initialize( graphicsManager );
 			Window.ClientSizeChanged += onGraphicsDeviceReset;

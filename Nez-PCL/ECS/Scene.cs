@@ -392,7 +392,7 @@ namespace Nez
 			if( _renderers[0].wantsToRenderToSceneRenderTarget )
 			{
 				Core.graphicsDevice.setRenderTarget( _sceneRenderTarget );
-				Core.graphicsDevice.Clear( clearColor );
+				// Core.graphicsDevice.Clear( clearColor ); // commenting out so my paint shows through
 			}
 		}
 
