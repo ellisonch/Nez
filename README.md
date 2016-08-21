@@ -1,5 +1,12 @@
 ![Nez](FAQs/images/nez-logo-black.png)
 
+ellisonch/Nez Fork Modifications
+==========
+The modifications in this fork are just to facilitate using Nez's UI in my Monogame game.  All modifications are dual licensed under the MIT and Apache-2.0 licenses, and all Nez code is copyright and licensed as stated in the license files.
+
+Original Readme
+==========
+
 Nez aims to be a lightweight 2D framework that sits on top of MonoGame/FNA. It provides a solid base for you to build a 2D game on. Some of the many features it includes are:
 
 - Scene/Entity/Component system with Component render layer tracking and optional entity systems (an implementation that operates on a group of entities that share a specific set of components)
