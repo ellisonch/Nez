@@ -269,17 +269,18 @@ namespace Nez.UI
 			if( hit == null || hit == this )
 				return hit;
 
-			var height = getHeight();
-			if( y <= height && y >= height - getPadTop() && x >= 0 && x <= getWidth() )
-			{
-				// Hit the title bar, don't use the hit child if it is in the Window's table.
-				Element current = hit;
-				while( current.getParent() != this )
-					current = current.getParent();
+			//var height = getHeight();
+			//var padtop = getPadTop();
+			//if ( y <= height && y >= height - getPadTop() && x >= 0 && x <= getWidth() )
+			//{
+			//	// Hit the title bar, don't use the hit child if it is in the Window's table.
+			//	Element current = hit;
+			//	while( current.getParent() != this )
+			//		current = current.getParent();
 				
-				if( getCell( current ) != null )
-					return this;
-			}
+			//	if( getCell( current ) != null )
+			//		return this;
+			//}
 			return hit;
 		}
 
