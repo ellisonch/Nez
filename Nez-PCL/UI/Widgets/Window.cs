@@ -65,6 +65,7 @@ namespace Nez.UI
 
 		bool IInputListener.onMousePressed( Vector2 mousePos )
 		{
+			this.toFront();
 			float width = getWidth(), height = getHeight();
 			edge = 0;
 			if( _isResizable && mousePos.X >= 0 && mousePos.X < width && mousePos.Y >= 0 && mousePos.Y < height )
